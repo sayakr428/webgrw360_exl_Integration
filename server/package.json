@@ -1,0 +1,33 @@
+{
+  "name": "webgrow360-server",
+  "version": "1.0.0",
+  "private": true,
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "main": "dist/app.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/app.ts",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node dist/app.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "health": "node -e \"require('http').get('http://localhost:'+(process.env.PORT||4000)+'/api/health',r=>{process.exit(r.statusCode===200?0:1)})\""
+  },
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^8.1.0",
+    "googleapis": "^159.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "prisma": "^6.15.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}
