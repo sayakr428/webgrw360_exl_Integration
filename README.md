@@ -83,7 +83,7 @@ npm install
 Create a `.env` file in the root directory:
 ```env
 # WhatsApp Business API
-VITE_WHATSAPP_NUMBER=919830022167
+VITE_WHATSAPP_NUMBER=xxxxxxxxxxxx
 
 # Email Configuration
 VITE_EMAILJS_SERVICE_ID=your_service_id
