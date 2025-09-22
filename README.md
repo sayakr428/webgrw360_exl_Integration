@@ -1,4 +1,4 @@
-<img width="1496" height="989" alt="image" src="https://github.com/user-attachments/assets/6475c829-d21b-4a65-9709-dea6cc61958a" />
+<img width="1718" height="979" alt="image" src="https://github.com/user-attachments/assets/0fc6f666-41ee-42d5-9d20-af18337147d1" />
 
 
 # WebGrow360 🚀
@@ -89,7 +89,6 @@ VITE_WHATSAPP_NUMBER=919830022167
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
-VITE_CONTACT_EMAIL=bhattacharjee631@gmail.com
 
 # Google Services
 VITE_GOOGLE_MAPS_API_KEY=your_google_maps_api_key
@@ -97,8 +96,6 @@ VITE_GOOGLE_ANALYTICS_ID=your_ga_tracking_id
 
 # Business Information
 VITE_BUSINESS_NAME=WebGrow360
-VITE_BUSINESS_PHONE=+91 9830022167
-VITE_BUSINESS_EMAIL=bhattacharjee631@gmail.com
 VITE_BUSINESS_ADDRESS=Agartala, Tripura (West), India
 
 # Social Media
