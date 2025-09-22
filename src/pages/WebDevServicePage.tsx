@@ -35,7 +35,6 @@ const WebDevServicePage = () => {
         'Fast loading speeds',
         'SEO-friendly structure'
       ],
-      link: '/services/Subservices/responsive-web-design'
     },
     {
       icon: ShoppingCart,
@@ -47,7 +46,6 @@ const WebDevServicePage = () => {
         'Order tracking system',
         'GST-compliant billing'
       ],
-      link: '/services/Subservices/e-commerce-development'
     },
     {
       icon: Zap,
@@ -59,7 +57,6 @@ const WebDevServicePage = () => {
         'Database optimization',
         'Caching strategies'
       ],
-      link: '/services/Subservices/performance-optimization'
     },
     {
       icon: Shield,
@@ -71,7 +68,6 @@ const WebDevServicePage = () => {
         'Security monitoring',
         'Software updates'
       ],
-      link: '/services/Subservices/security-maintenance'
     }
   ];
 
@@ -382,6 +378,39 @@ const WebDevServicePage = () => {
                 );
               })}
             </div>
+            {/* ADD THE LEARN MORE BUTTON HERE */}
+<div className="mt-12 text-left">
+  <Link
+    to="/services/Subservices/responsive-web-design"
+    className="group relative inline-block transform hover:scale-105 transition-all duration-500"
+  >
+    <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-60 group-hover:opacity-100 animate-pulse-glow"></div>
+    <div className="absolute -inset-1 bg-gradient-to-r from-green-400/50 via-emerald-500/50 to-teal-500/50 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 opacity-40 animate-morph"></div>
+    
+    <div className="relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white px-10 py-5 rounded-full font-bold text-xl border border-green-400/30 shadow-2xl backdrop-blur-sm overflow-hidden flex items-center gap-3">
+      <span className="relative z-10">Learn More About Our Services</span>
+      <svg className="w-6 h-6 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+      </svg>
+      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
+      
+      {/* Sparkle effect */}
+      <div className="absolute inset-0 rounded-full overflow-hidden">
+        {[...Array(8)].map((_, i) => (
+          <div
+            key={i}
+            className="absolute w-1 h-1 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
+            style={{
+              left: `${10 + i * 10}%`,
+              top: `${30 + (i % 2) * 20}%`,
+              animationDelay: `${i * 0.2}s`
+            }}
+          ></div>
+        ))}
+      </div>
+    </div>
+  </Link>
+</div>
           </div>
         </section>
 

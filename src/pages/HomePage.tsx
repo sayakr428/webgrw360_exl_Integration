@@ -230,7 +230,7 @@ const HomePage = () => {
 
   const whyChooseUs = [
     'Deep Local Expertise: We know the Northeast Indian market inside out, giving your business the edge it needs to thrive locally and nationally.',
-    'Proven Digital Success: With over 5 years of experience, we have delivered real results for 100+ Indian businesses.',
+    'Proven Digital Success: With over an year of experience, we have delivered real results for 10+ Indian businesses.',
     'Trusted and Transparent: Our GST-compliant billing and processes ensure complete trust and transparency.',
     'Always There for You: 24/7 WhatsApp support during IST hours means your questions get answered anytime.',
     'Affordable Solutions: Tailored pricing designed especially for Indian MSMEs, making growth accessible for all.'
@@ -431,11 +431,11 @@ const HomePage = () => {
               <div className="grid grid-cols-2 gap-8">
                 {[
                   { icon: Users, number: '100+', text: 'Happy Clients', color: 'from-blue-500 to-cyan-500' },
-                  { icon: Award, number: '5+', text: 'Years Experience', color: 'from-cyan-500 to-blue-500' },
+                  { icon: Award, number: '1+', text: 'Years Experience', color: 'from-cyan-500 to-blue-500' },
                   { icon: TrendingUp, number: '250%', text: 'Avg. ROI Increase', color: 'from-purple-500 to-blue-500' },
                   { icon: Globe, number: '24/7', text: 'WhatsApp Support', color: 'from-blue-500 to-purple-500' },
-                  { icon: Award, number: 'Flexible', text: 'Trustworthy', color: 'from-cyan-500 to-purple-500' },
-                  { icon: Globe, number: 'Affordable', text: 'Effective', color: 'from-blue-500 to-cyan-500' }
+                  { icon: Award, number: 'Agile', text: 'Trustworthy', color: 'from-cyan-500 to-purple-500' },
+                  { icon: Globe, number: 'Cheap', text: 'Effective', color: 'from-blue-500 to-cyan-500' }
                 ].map((stat, index) => {
                   const IconComponent = stat.icon;
                   return (

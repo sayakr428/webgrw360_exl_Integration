@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Search, Target, TrendingUp, MapPin, Globe, BarChart3 } from 'lucide-react';
+import { Search, Target, TrendingUp, MapPin, Globe, BarChart3, ArrowRight } from 'lucide-react';
 
 const SEOServicePage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -47,7 +46,6 @@ const SEOServicePage = () => {
         'Schema markup implementation',
         'Core Web Vitals improvement'
       ],
-      link: '/services/Subservices/technical-seo'
     },
     {
       icon: Target,
@@ -59,7 +57,6 @@ const SEOServicePage = () => {
         'Search intent mapping',
         'Keyword difficulty assessment'
       ],
-      link: '/services/Subservices/keyword-research'
     },
     {
       icon: TrendingUp,
@@ -71,7 +68,6 @@ const SEOServicePage = () => {
         'SEO copywriting',
         'Internal linking strategy'
       ],
-      link: '/services/Subservices/content-optimization'
     }
   ];
 
@@ -274,11 +270,11 @@ const SEOServicePage = () => {
               {seoServices.map((service, index) => {
                 const IconComponent = service.icon;
                 return (
-                  <Link 
+                  <div 
                     key={index} 
-                    to={service.link}
                     className="block transform transition-all duration-700 hover:scale-105 group"
                   >
+                  
                     <div className="relative h-full">
                       {/* Complex layered backgrounds */}
                       <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-slate-50/90 to-blue-50/80 rounded-[2rem] blur-sm group-hover:blur-md transition-all duration-700"></div>
@@ -346,9 +342,43 @@ const SEOServicePage = () => {
                         <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform -translate-x-1/2 -translate-y-1/2 animate-morph-slow"></div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
+            </div>
+
+            {/* Learn More Button positioned in the left corner below the services grid */}
+            <div className="mt-16 flex justify-start">
+              <button 
+                onClick={() => window.location.href = '/services/Subservices/local-seo'}
+                className="group relative inline-block transform hover:scale-105 transition-all duration-500"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 via-cyan-400/30 to-purple-400/20 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-60 group-hover:opacity-100"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/10 via-cyan-400/15 to-purple-400/10 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 opacity-40 animate-morph"></div>
+                
+                <div className="relative bg-gradient-to-r from-blue-600 via-cyan-600 to-purple-600 text-white px-8 py-4 rounded-full font-bold text-lg border border-blue-400/30 shadow-2xl backdrop-blur-sm overflow-hidden flex items-center space-x-3 group-hover:from-blue-500 group-hover:via-cyan-500 group-hover:to-purple-500 transition-all duration-500">
+                  <span className="relative z-10">Learn More About Our Services</span>
+                  <ArrowRight className="h-5 w-5 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  
+                  {/* Inner glow */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
+                  
+                  {/* Particle effect */}
+                  <div className="absolute inset-0 rounded-full overflow-hidden">
+                    {[...Array(6)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
+                        style={{
+                          left: `${15 + i * 12}%`,
+                          top: '50%',
+                          animationDelay: `${i * 0.2}s`
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </button>
             </div>
           </div>
         </section>

@@ -1,4 +1,4 @@
-import logo from './2.png';
+import logo from './2.jpg';
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';
@@ -53,7 +53,7 @@ const Header = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-400/20 to-purple-500/20 rounded-lg blur-sm group-hover:blur-md transition-all duration-300"></div>
             <div className="relative backdrop-blur-sm bg-white/10 rounded-lg p-1 border border-white/20">
               <img 
-                src={'/src/components/2.jpg'}
+                src={logo}
                 alt="Canvas Logo"
                 className="h-12 w-auto object-contain rounded-md group-hover:scale-105 transition-transform duration-300"
               />

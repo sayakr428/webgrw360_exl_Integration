@@ -1,3 +1,4 @@
+import logo from './2.jpg';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, MapPin, Phone, Mail, Clock } from 'lucide-react';
@@ -49,7 +50,7 @@ const Footer = () => {
               <div className="relative">
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-500 rounded-lg blur-sm group-hover:blur-md transition-all duration-300"></div>
                 <img 
-                  src={'/src/components/2.jpg'}
+                  src={logo}
                   alt="WebGrow360 Logo"
                   className="relative h-12 w-auto object-contain rounded-lg shadow-lg group-hover:scale-105 transition-transform duration-300"
                 />

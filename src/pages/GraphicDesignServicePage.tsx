@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Palette, Image, FileText, Package, Zap, Eye, Sparkles, Brush, Star, Target } from 'lucide-react';
+import { Palette, Image, FileText, Package, Zap, Eye, Sparkles, Brush, Star, Target, ArrowRight } from 'lucide-react';
 
 const GraphicDesignServicePage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -35,7 +35,6 @@ const GraphicDesignServicePage = () => {
         'Typography selection',
         'Brand guidelines document'
       ],
-      link: '/services/Subservices/branding'
     },
     {
       icon: FileText,
@@ -47,7 +46,6 @@ const GraphicDesignServicePage = () => {
         'Social media graphics',
         'Email templates'
       ],
-      link: '/services/Subservices/marketing-materials'
     },
     {
       icon: Package,
@@ -59,7 +57,6 @@ const GraphicDesignServicePage = () => {
         'Promotional banners',
         'Point-of-sale materials'
       ],
-      link: '/services/Subservices/product-design'
     },
     {
       icon: Image,
@@ -71,7 +68,6 @@ const GraphicDesignServicePage = () => {
         'Digital advertisements',
         'Infographic creation'
       ],
-      link: '/services/Subservices/digital-graphics'
     }
   ];
 
@@ -310,7 +306,7 @@ const GraphicDesignServicePage = () => {
         </section>
 
         {/* Enhanced Services Grid */}
-        <section className="py-24 relative">
+<section className="py-24 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-white/60 to-purple-50/80 backdrop-blur-sm"></div>
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -409,6 +405,40 @@ const GraphicDesignServicePage = () => {
                 );
               })}
             </div>
+            
+            {/* Learn More Button */}
+            <div className="text-left mt-16">
+              <Link
+                to="/services/Subservices/branding"
+                className="group relative inline-block transform hover:scale-105 transition-all duration-500"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-purple-400 via-pink-500 to-fuchsia-500 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-60 group-hover:opacity-100 animate-pulse-glow"></div>
+                <div className="absolute -inset-2 bg-gradient-to-r from-purple-400/50 via-pink-500/50 to-fuchsia-500/50 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-40 animate-morph"></div>
+                
+                <div className="relative bg-gradient-to-r from-purple-500 via-pink-500 to-fuchsia-500 text-white px-8 py-4 rounded-full font-bold text-lg border border-purple-400/30 shadow-2xl backdrop-blur-sm overflow-hidden">
+                  <span className="relative z-10 flex items-center space-x-2">
+                    <span>Learn More About Our Services</span>
+                    <ArrowRight className="h-5 w-5 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </span>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
+                  {/* Sparkle effect */}
+                  <div className="absolute inset-0 rounded-full overflow-hidden">
+                    {[...Array(8)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white/60 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
+                        style={{
+                          left: `${10 + i * 10}%`,
+                          top: '50%',
+                          animationDelay: `${i * 0.2}s`
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </Link>
+            </div>
+            
           </div>
         </section>
 

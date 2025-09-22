@@ -55,7 +55,7 @@ const AboutPage = () => {
               <h2 className="text-3xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-6">Our Story</h2>
               <div className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  Founded in 2019 in the heart of Agartala, Tripura, WebGrow360 began with a simple mission: 
+                  Founded in 2025 in the heart of Agartala, Tripura, WebGrow360 began with a simple mission: 
                   to bridge the digital divide for businesses in Northeast India. We saw countless talented 
                   entrepreneurs with amazing products and services struggling to reach their audience online.
                 </p>
@@ -66,7 +66,7 @@ const AboutPage = () => {
                 </p>
                 <p>
                   Our deep understanding of Indian business culture, combined with cutting-edge digital 
-                  marketing techniques, has helped over 100+ businesses achieve remarkable online growth. 
+                  marketing techniques, has helped over 10+ businesses achieve remarkable online growth. 
                   From local startups to established enterprises, we've been the catalyst for their digital transformation.
                 </p>
               </div>
@@ -223,7 +223,7 @@ const AboutPage = () => {
                     <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full mt-2 flex-shrink-0 shadow-lg"></div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Proven Track Record</h3>
-                      <p className="text-gray-700">100+ successful projects with measurable results and satisfied clients across India.</p>
+                      <p className="text-gray-700">10+ successful projects with measurable results and satisfied clients across India.</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4 p-4 rounded-2xl backdrop-blur-sm bg-white/10 border border-white/20 hover:bg-white/20 transition-all duration-300">
@@ -244,15 +244,15 @@ const AboutPage = () => {
               </div>
               <div className="grid grid-cols-2 gap-6">
                 <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-6 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">2019</div>
+                  <div className="text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">2025</div>
                   <div className="text-gray-700 font-medium">Founded in Agartala</div>
                 </div>
                 <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-6 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">100+</div>
+                  <div className="text-4xl font-bold bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">10+</div>
                   <div className="text-gray-700 font-medium">Projects Completed</div>
                 </div>
                 <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-6 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
-                  <div className="text-4xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">15+</div>
+                  <div className="text-4xl font-bold bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mb-2 group-hover:scale-110 transition-transform duration-300">2+</div>
                   <div className="text-gray-700 font-medium">States Served</div>
                 </div>
                 <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-6 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
