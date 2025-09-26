@@ -21,7 +21,7 @@ const WhatsAppFloat = () => {
       })
       const blob = new Blob([payload], { type: 'application/json' })
       // Vite proxy will forward /api to http://localhost:4000
-      navigator.sendBeacon('/api/leads', blob)
+      navigator.sendBeacon('https://webgrw360-exl-integration.onrender.com/api/leads', blob)
     } catch {
       // ignore
     } finally {

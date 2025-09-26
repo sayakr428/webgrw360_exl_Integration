@@ -30,7 +30,7 @@ export default function VisitTracker() {
         medium: url.searchParams.get('utm_medium'),
         campaign: url.searchParams.get('utm_campaign'),
       }
-      sendBeaconJSON('/api/visits', {
+      sendBeaconJSON('https://webgrw360-exl-integration.onrender.com/api/visits', {
         event: 'pageview',
         pageUrl: window.location.href,
         utm,
