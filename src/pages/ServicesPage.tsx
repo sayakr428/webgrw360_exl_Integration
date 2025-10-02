@@ -287,7 +287,7 @@ const ServicesPage = () => {
                   <span className="group-hover:text-blue-100 transition-colors duration-300">Get Free Consultation</span>
                 </a>
                 <a
-                  to="/contact"
+                  href="/contact"
                   className="backdrop-blur-xl bg-white/10 border-2 border-white/40 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 hover:border-white/60 transition-all duration-300 hover:scale-105"
                 >
                   Contact Us
