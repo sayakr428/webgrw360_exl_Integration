@@ -153,9 +153,9 @@ const PortfolioPage = () => {
           {/* Liquid Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20">
             {[
-              { value: '100+', label: 'Projects Completed' },
+              { value: '10+', label: 'Projects Completed' },
               { value: '250%', label: 'Average ROI Increase' },
-              { value: '15+', label: 'Industries Served' },
+              { value: '2+', label: 'Industries Served' },
               { value: '98%', label: 'Client Satisfaction' }
             ].map((stat, index) => (
               <div key={index} className="relative group">

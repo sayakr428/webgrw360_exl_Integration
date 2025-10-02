@@ -242,21 +242,21 @@ const HomePage = () => {
       business: 'Kumar Electronics, Guwahati',
       rating: 5,
       text: 'WebGrow360 helped us increase our online sales by 300% within 6 months. Their understanding of the Northeast Indian market is exceptional.',
-      image: 'https://media.licdn.com/dms/image/v2/C4E03AQGl_1NBr5IZxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516347451271?e=1759363200&v=beta&t=HDKE4xUG_zF5cWWiZhMjbEVjLy_lRyeiMpSSscJLGa4'
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQGtk99bZiPHNg/profile-displayphoto-scale_200_200/B56ZlrFfgwIAAY-/0/1758438226829?e=1762387200&v=beta&t=FQ_svu5Z2tVUBQzn4x6ccpoVqKLyltYUrQY9SrScdRI'
     },
     {
       name: 'Priya Sharma',
       business: 'Sharma Textiles, Silchar',
       rating: 5,
       text: 'The SEO services provided by WebGrow360 got us ranking #1 for textiles in Assam. Our business inquiries doubled!',
-      image: 'https://media.licdn.com/dms/image/v2/C4E03AQHdtATtbJqjgg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1591284019845?e=1759363200&v=beta&t=4VVpSzX592nM9LvxnduuJEGqpjr6xy6g7mQz6y31pgY'
+      image: 'https://media.licdn.com/dms/image/v2/C4E03AQERH4vQyWuVAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1649850661679?e=1762387200&v=beta&t=zD_JaOsvtw2pLsnB8svV2CZH6reh7_GgFC8WDE4zaXo'
     },
     {
       name: 'Ankit Das',
       business: 'Das Consulting, Agartala',
       rating: 5,
       text: 'Professional, reliable, and results-driven. They understand the local business culture and deliver exactly what they promise.',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQHYfas8x13pMg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1724867522763?e=1759363200&v=beta&t=jWc1v22R5NJfrz2T_RhA2jwMlM8l5yQFZtNmPkqbFH0'
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQEZvy_R9EY63g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1681819573926?e=1762387200&v=beta&t=s4-vo8Ttj5t9zPGhHqO1w0liW9mA_hpp9B_02EqXH_M'
     }
   ];
 
@@ -430,7 +430,7 @@ const HomePage = () => {
               
               <div className="grid grid-cols-2 gap-8">
                 {[
-                  { icon: Users, number: '100+', text: 'Happy Clients', color: 'from-blue-500 to-cyan-500' },
+                  { icon: Users, number: '10+', text: 'Happy Clients', color: 'from-blue-500 to-cyan-500' },
                   { icon: Award, number: '1+', text: 'Years Experience', color: 'from-cyan-500 to-blue-500' },
                   { icon: TrendingUp, number: '250%', text: 'Avg. ROI Increase', color: 'from-purple-500 to-blue-500' },
                   { icon: Globe, number: '24/7', text: 'WhatsApp Support', color: 'from-blue-500 to-purple-500' },
@@ -579,7 +579,7 @@ const HomePage = () => {
               Ready to upscale your online store?
             </h2>
             <p className="text-2xl mb-12 opacity-95 leading-relaxed max-w-4xl mx-auto">
-              Join 100+ successful Indian businesses who trusted WebGrow360 to boost their 
+              Join 10+ successful Indian businesses who trusted WebGrow360 to boost their 
               online presence and increase their revenue. Get your free consultation today!
             </p>
             

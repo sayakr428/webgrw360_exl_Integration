@@ -117,7 +117,7 @@ const BlogPage = () => {
               </h1>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Expert tips, strategies, and insights to help Indian businesses thrive online. 
-                Learn from our experience working with 100+ successful digital marketing campaigns.
+                Learn from our experience working with 10+ successful digital marketing campaigns.
               </p>
             </div>
           </div>
