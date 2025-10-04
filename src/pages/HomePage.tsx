@@ -526,10 +526,10 @@ const HomePage = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {[
-                { img: 'https://images.pexels.com/photos/3184338/pexels-photo-3184338.jpeg?auto=compress&cs=tinysrgb&w=400', title: 'E-commerce Growth', desc: '300% sales increase for online stores' },
-                { img: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=400', title: 'Local SEO', desc: 'Top rankings for local businesses' },
+                { img: 'https://www.globalcoachcenter.com/wp-content/uploads/2024/05/Firefly-Business-workers-in-office-in-India-collaborating-in-conference-room-39423-1024x585.jpg', title: 'E-commerce Growth', desc: '300% sales increase for online stores' },
+                { img: 'https://visualsindia.com/img/seo-banner.png', title: 'Local SEO', desc: 'Top rankings for local businesses' },
                 { img: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=400', title: 'Social Media', desc: '10K+ followers gained monthly' },
-                { img: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=400', title: 'Web Development', desc: 'Mobile-first responsive websites' }
+                { img: 'https://delaine.tech/wp-content/uploads/2024/01/Webdevelopment.png', title: 'Web Development', desc: 'Mobile-first responsive websites' }
               ].map((story, index) => (
                 <div key={index} className="relative backdrop-blur-lg bg-white/80 p-8 rounded-3xl shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.2)] transition-all duration-700 transform hover:-translate-y-6 hover:scale-105 group border border-white/50 overflow-hidden">
                   {/* Liquid morphing background */}
