@@ -74,7 +74,7 @@ const AboutPage = () => {
             <div className="backdrop-blur-xl bg-gradient-to-br from-white/30 to-white/10 border border-white/30 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500">
               <div className="relative overflow-hidden rounded-2xl mb-6">
                 <img
-                  src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=600"
+                  src="https://static.vecteezy.com/system/resources/thumbnails/025/322/879/original/of-indian-employees-sitting-at-chair-discussing-on-project-working-together-video.jpg"
                   alt="Team collaboration in Indian office setting"
                   className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
                 />
