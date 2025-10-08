@@ -1,8 +1,10 @@
-import React from 'react';
-import { Users, Target, Award, Heart } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Users, Target, Award, Heart, ArrowRight, ExternalLink, Star } from 'lucide-react';
 
 const AboutPage = () => {
-  const values = [
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  const values = [
     {
       icon: Target,
       title: 'Results-Driven',

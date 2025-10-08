@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react';
-import { Search, Target, TrendingUp, MapPin, Globe, BarChart3, ArrowRight } from 'lucide-react';
+import { Search, Target, TrendingUp, MapPin, Globe, BarChart3, ArrowRight, ExternalLink, Star } from 'lucide-react';
 
 const SEOServicePage = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {

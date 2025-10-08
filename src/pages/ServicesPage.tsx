@@ -1,7 +1,10 @@
-import React from 'react';
-import { Search, Globe, Share2, ArrowRight, CheckCircle, Palette } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Search, Globe, Share2, ArrowRight, CheckCircle, Palette, ExternalLink, Star } from 'lucide-react';
 
 const ServicesPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const services = [
     {
       icon: Search,

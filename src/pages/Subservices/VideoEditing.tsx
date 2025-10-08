@@ -1,5 +1,5 @@
-import React from 'react';
-import { Video, Film, MessageSquare, PlaySquare, Edit2, Users, Sparkles, BarChart3, BookOpen, Layers } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Video, Film, MessageSquare, PlaySquare, Edit2, Users, Sparkles, BarChart3, BookOpen, Layers, ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 // Highly relevant images for AI video content, editing, creative process
 const videoImages = [
@@ -96,7 +96,11 @@ const faqs = [
   }
 ];
 
-const VideoEditing = () => (
+const VideoEditing = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
   <div className="bg-gray-50 min-h-screen">
     {/* HERO */}
     <section className="py-16 px-4 text-center">
@@ -203,6 +207,7 @@ const VideoEditing = () => (
       </a>
     </section>
   </div>
-);
+ );
+};
 
 export default VideoEditing;

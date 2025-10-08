@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { MapPin, Phone, Mail, Clock, MessageCircle, Send } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, MessageCircle, Send, ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 const ContactPage = () => {
-  const [formData, setFormData] = useState({
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);  const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',

@@ -1,5 +1,5 @@
-import React from 'react';
-import { Search, BarChart3, MapPin, Globe, TrendingUp, Users, Lightbulb, ShieldCheck, Stars } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Search, BarChart3, MapPin, Globe, TrendingUp, Users, Lightbulb, ShieldCheck, Stars, ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 const seoImages = [
   "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80",
@@ -92,7 +92,11 @@ const faqs = [
   }
 ];
 
-const LocalSEO = () => (
+const LocalSEO = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
   <div className="bg-gray-50 min-h-screen">
     {/* HERO */}
     <section className="py-16 px-4 text-center">
@@ -196,7 +200,8 @@ const LocalSEO = () => (
         Get Your Free Audit
       </a>
     </section>
-  </div>
-);
+   </div>
+  );
+};
 
 export default LocalSEO;

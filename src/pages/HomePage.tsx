@@ -1,7 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { Search, Globe, Share2, ArrowRight, CheckCircle, Star, Users, Award, TrendingUp, Palette, Video } from 'lucide-react';
+import { Search, Globe, Share2, ArrowRight, CheckCircle, Star, Users, Award, TrendingUp, Palette, Video, ExternalLink } from 'lucide-react';
 
 // Enhanced Liquid Background Component with more dynamic effects
+
 const LiquidBackground = ({ children, intensity = 1, variant = 'default' }) => {
   const canvasRef = useRef(null);
   const animationRef = useRef(null);
@@ -183,9 +184,99 @@ const EnhancedServiceCard = ({ service, index }) => {
     </div>
   );
 };
+// Carousel Component for Services
+const ServicesCarousel = ({ services }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPaused, setIsPaused] = useState(false);
 
+  useEffect(() => {
+    if (isPaused) return;
+    
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % services.length);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, [isPaused, services.length]);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
+  };
+
+  const goToPrevious = () => {
+    setCurrentIndex((prev) => (prev - 1 + services.length) % services.length);
+  };
+
+  const goToNext = () => {
+    setCurrentIndex((prev) => (prev + 1) % services.length);
+  };
+
+  return (
+    <div 
+      className="relative max-w-6xl mx-auto pb-4"
+      onMouseEnter={() => setIsPaused(true)}
+      onMouseLeave={() => setIsPaused(false)}
+    >
+      {/* Carousel Container */}
+      <div className="overflow-hidden relative pb-10">
+        <div 
+          className="flex transition-transform duration-700 ease-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {services.map((service, index) => (
+            <div key={index} className="w-full flex-shrink-0 px-4 pb-8">
+              <div className="max-w-md mx-auto">
+                <EnhancedServiceCard service={service} index={index} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* Navigation Arrows */}
+      <button
+        onClick={goToPrevious}
+        className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 bg-white/90 hover:bg-white text-blue-600 p-4 rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all duration-300 z-20 backdrop-blur-sm hover:scale-110"
+        aria-label="Previous service"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M15 19l-7-7 7-7" />
+        </svg>
+      </button>
+      
+      <button
+        onClick={goToNext}
+        className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 bg-white/90 hover:bg-white text-blue-600 p-4 rounded-full shadow-2xl hover:shadow-[0_0_30px_rgba(59,130,246,0.5)] transition-all duration-300 z-20 backdrop-blur-sm hover:scale-110"
+        aria-label="Next service"
+      >
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M9 5l7 7-7 7" />
+        </svg>
+      </button>
+
+      {/* Dot Indicators */}
+      <div className="flex justify-center mt-12 gap-3">
+        {services.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`transition-all duration-300 rounded-full ${
+              currentIndex === index
+                ? 'w-12 h-3 bg-gradient-to-r from-blue-600 to-purple-600'
+                : 'w-3 h-3 bg-gray-300 hover:bg-gray-400'
+            }`}
+            aria-label={`Go to service ${index + 1}`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 const HomePage = () => {
-  const services = [
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+    const services = [
     {
       icon: Search,
       title: 'SEO Services',
@@ -371,11 +462,7 @@ const HomePage = () => {
               </p>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
-              {services.map((service, index) => (
-                <EnhancedServiceCard key={index} service={service} index={index} />
-              ))}
-            </div>
+            <ServicesCarousel services={services} />
           </div>
         </section>
       </LiquidBackground>

@@ -1,7 +1,10 @@
-import React from 'react';
-import { Calendar, User, ArrowRight, Tag } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Calendar, User, ArrowRight, Tag, ExternalLink, Star } from 'lucide-react';
 
 const BlogPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const featuredPost = {
     id: 1,
     title: 'Digital Marketing Trends for Indian Businesses in 2025',

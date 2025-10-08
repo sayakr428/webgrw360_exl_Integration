@@ -1,5 +1,5 @@
-import React from 'react';
-import { Paintbrush, Smartphone, UserCheck, FileText, BarChart3, Settings, ArrowUpCircle, Users, Eye, BookOpen, ShieldCheck } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Paintbrush, Smartphone, UserCheck, FileText, BarChart3, Settings, ArrowUpCircle, Users, Eye, BookOpen, ShieldCheck,ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 const designImages = [
   "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80",  // Modern layout
@@ -92,7 +92,11 @@ const faqs = [
   }
 ];
 
-const WebDesigning = () => (
+const WebDesigning = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+ return (
   <div className="bg-gray-50 min-h-screen">
     {/* HERO */}
     <section className="py-16 px-4 text-center">
@@ -199,6 +203,7 @@ const WebDesigning = () => (
       </a>
     </section>
   </div>
-);
+ );
+};
 
 export default WebDesigning;

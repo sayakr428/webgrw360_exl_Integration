@@ -1,5 +1,5 @@
-import React from 'react';
-import { Instagram, Facebook, Linkedin, Users, Sparkles, Video, DollarSign, HeartHandshake, MessageCircle, BarChart3, TrendingUp, ArrowUpCircle, BookOpen, PieChart } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Instagram, Facebook, Linkedin, Users, Sparkles, Video, DollarSign, HeartHandshake, MessageCircle, BarChart3, TrendingUp, ArrowUpCircle, BookOpen, PieChart, ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 // New more stylistically diverse images for fresh visual impact
 const smmImages = [
@@ -93,7 +93,12 @@ const faqs = [
   }
 ];
 
-const ContentCreation = () => (
+const ContentCreation = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  return (
+
   <div className="bg-gray-50 min-h-screen">
     {/* HERO */}
     <section className="py-16 px-4 text-center">
@@ -200,6 +205,7 @@ const ContentCreation = () => (
       </a>
     </section>
   </div>
-);
+  );
+};
 
 export default ContentCreation;

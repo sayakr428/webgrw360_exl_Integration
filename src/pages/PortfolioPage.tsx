@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 const PortfolioPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const portfolioItems = [
     {
       id: 1,

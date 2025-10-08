@@ -83,7 +83,7 @@ const Footer = () => {
                   <div className="p-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full group-hover:scale-110 transition-transform duration-300">
                     <Mail className="h-4 w-4 text-white" />
                   </div>
-                  <span className="text-sm">Webgroww360@gmail.com</span>
+                  <span className="text-sm">support@webgrow360.online</span>
                 </div>
                 
                 <div className="flex items-center space-x-3 text-gray-300 group hover:text-white transition-colors duration-300">
@@ -141,12 +141,11 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 shadow-xl hover:bg-white/10 transition-all duration-300">
             <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
               Our Services
             </h3>
-            <ul className="space-y-3">
+            <ul className="space-y-3 mb-8">
               <li>
                 <Link to="/services/seo" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
                   <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
@@ -178,8 +177,13 @@ const Footer = () => {
                 Digital Consultation
               </li>
             </ul>
+            <a href="https://drive.google.com/file/d/1ACg7qITR1U220UznZgZyYAbVQsv4glzE/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:scale-105">
+              Our Privacy Policies
+            </a>
           </div>
         </div>
+
+        
 
         <div className="border-t border-gradient-to-r from-transparent via-white/20 to-transparent mt-12 pt-8">
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 shadow-xl">

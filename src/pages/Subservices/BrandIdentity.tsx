@@ -1,5 +1,5 @@
-import React from 'react';
-import { Palette, PenTool, Layers, Image, FileText, Users, Eye, Sparkles, BarChart3, BookOpen } from 'lucide-react';
+import React, { useEffect } from 'react';
+import { Palette, PenTool, Layers, Image, FileText, Users, Eye, Sparkles, BarChart3, BookOpen, ExternalLink, ArrowRight, Star } from 'lucide-react';
 
 // Images chosen to directly suggest professional graphic design, drawing, digital art, branding
 const designImages = [
@@ -93,31 +93,40 @@ const faqs = [
   }
 ];
 
-const BrandIdentity = () => (
-  <div className="bg-gray-50 min-h-screen">
-    {/* HERO */}
-    <section className="py-16 px-4 text-center">
-      <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">Brand Identity & Graphic Design</h1>
-      <p className="text-xl sm:text-2xl text-gray-700 mb-6 max-w-2xl mx-auto">
-        <span className="text-yellow-600 font-medium">Stand out with visuals that captivate, convert, and build trust—wherever your brand appears.</span>
-      </p>
-      <div className="flex flex-wrap justify-center gap-6 mb-8">
-        {designImages.map((src, i) => (
-          <img key={i} src={src} className="rounded-xl shadow-lg w-48 h-36 object-cover" alt="Graphic design visual" />
-        ))}
-      </div>
-      <div className="max-w-2xl mx-auto text-gray-600 mb-6">
-        <p>
-          Is your branding falling flat or losing customers because your visuals get ignored? The digital marketplace is a battle of first impressions. <b>Modern, memorable design boosts engagement, recognition, and sales on every campaign.</b>
+const BrandIdentity = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  return (
+    <div className="bg-gray-50 min-h-screen">
+      {/* HERO */}
+      <section className="py-16 px-4 text-center">
+        <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6">
+          Brand Identity & Graphic Design
+        </h1>
+        <p className="text-xl sm:text-2xl text-gray-700 mb-6 max-w-2xl mx-auto">
+          <span className="text-yellow-600 font-medium">
+            Stand out with visuals that captivate, convert, and build trust—wherever your brand appears.
+          </span>
         </p>
-      </div>
-      <a
-        href="/contact"
-        className="bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-600 hover:shadow-lg duration-200 inline-block"
-      >
-        Free Design Consultation
-      </a>
-    </section>
+        <div className="flex flex-wrap justify-center gap-6 mb-8">
+          {designImages.map((src, i) => (
+            <img key={i} src={src} className="rounded-xl shadow-lg w-48 h-36 object-cover" alt="Graphic design visual" />
+          ))}
+        </div>
+        <div className="max-w-2xl mx-auto text-gray-600 mb-6">
+          <p>
+            Is your branding falling flat or losing customers because your visuals get ignored? The digital marketplace is a battle of first impressions. <b>Modern, memorable design boosts engagement, recognition, and sales on every campaign.</b>
+          </p>
+        </div>
+        <a
+          href="/contact"
+          className="bg-yellow-500 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-600 hover:shadow-lg duration-200 inline-block"
+        >
+          Free Design Consultation
+        </a>
+      </section>
 
     {/* WHY DESIGN */}
     <section className="max-w-4xl mx-auto px-4 mb-12 text-center">
@@ -190,16 +199,17 @@ const BrandIdentity = () => (
 
     {/* FINAL CTA */}
     <section className="py-14 bg-yellow-50 text-center">
-      <h2 className="text-2xl sm:text-3xl font-bold text-yellow-700 mb-3">Ready to refresh your brand visuals?</h2>
-      <p className="text-lg text-yellow-600 mb-6">Connect now for a free design consultation and portfolio review! Give your business the visual edge it deserves.</p>
-      <a
-        href="/contact"
-        className="bg-yellow-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-700 hover:shadow-lg duration-200 inline-block"
-      >
-        Get My Design Proposal
-      </a>
-    </section>
-  </div>
-);
+        <h2 className="text-2xl sm:text-3xl font-bold text-yellow-700 mb-3">Ready to refresh your brand visuals?</h2>
+        <p className="text-lg text-yellow-600 mb-6">Connect now for a free design consultation and portfolio review! Give your business the visual edge it deserves.</p>
+        <a
+          href="/contact"
+          className="bg-yellow-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-yellow-700 hover:shadow-lg duration-200 inline-block"
+        >
+          Get My Design Proposal
+        </a>
+      </section>
+    </div>
+  );
+};
 
 export default BrandIdentity;
