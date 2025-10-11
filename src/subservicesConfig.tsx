@@ -2,7 +2,7 @@
 import React from "react";
 
 import LocalSEO from "./pages/Subservices/LocalSEO";
-import TechnicalSEO from "./pages/Subservices/TechnicalSEO";
+import Policies_Page from "./pages/Subservices/Policies_Page";
 import KeywordSEO from "./pages/Subservices/KeywordSEO";
 import ContentSEO from "./pages/Subservices/ContentSEO";
 import WebDesign from "./pages/Subservices/WebDesign";
@@ -29,7 +29,7 @@ interface Subservice {
 
 const subservices: Subservice[] = [
   { path: "local-seo", element: <LocalSEO /> },
-  { path: "technical-seo", element: <TechnicalSEO /> },
+  { path: "technical-seo", element: <Policies_Page /> },
   { path: "keyword-research", element: <KeywordSEO /> },
   { path: "content-optimization", element: <ContentSEO /> },
   { path: "responsive-web-design", element: <WebDesign /> },

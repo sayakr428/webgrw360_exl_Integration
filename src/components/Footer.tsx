@@ -177,11 +177,16 @@ const Footer = () => {
                 Digital Consultation
               </li>
             </ul>
-            <a href="https://drive.google.com/file/d/1ACg7qITR1U220UznZgZyYAbVQsv4glzE/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:scale-105">
-              Our Privacy Policies
-            </a>
+            <Link
+  to="/services/Subservices/technical-seo"
+  className="inline-block px-6 py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg hover:from-purple-600 hover:to-pink-600 transition-all duration-300 shadow-lg hover:shadow-purple-500/50 hover:scale-105"
+>
+  Our Privacy Policies
+</Link>
+
           </div>
         </div>
+        
 
         
 
