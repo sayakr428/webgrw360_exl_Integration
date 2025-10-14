@@ -12,7 +12,7 @@ const PortfolioPage = () => {
       category: 'E-commerce',
       client: 'Local Artisan Cooperative',
       description: 'Complete e-commerce solution for traditional Tripuri handicrafts with integrated payment gateway and inventory management.',
-      image: 'https://images.pexels.com/photos/3962285/pexels-photo-3962285.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://content.jdmagicbox.com/comp/def_content/handicraft-item-wholesalers/12b942b856-handicraft-item-wholesalers-3-prz4a.jpg',
       results: [
         '300% increase in online sales',
         '150+ products listed',
@@ -28,7 +28,7 @@ const PortfolioPage = () => {
       category: 'Travel & Tourism',
       client: 'Travel Agency, Guwahati',
       description: 'Responsive travel website showcasing Northeast India destinations with booking system and tour packages.',
-      image: 'https://images.pexels.com/photos/3278215/pexels-photo-3278215.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.newsarenaindia.com/_next/image?url=https%3A%2F%2Fimages.newsarenaindia.com%2F%2Fne-tourism-2jpg_1747644848291.jpg&w=1920&q=75',
       results: [
         '250% increase in bookings',
         '500+ daily visitors',
@@ -44,7 +44,7 @@ const PortfolioPage = () => {
       category: 'Social Media Marketing',
       client: 'Coaching Institute, Agartala',
       description: 'Complete social media marketing campaign to increase student enrollments and brand awareness.',
-      image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://www.livemint.com/lm-img/img/2024/05/09/600x338/2-0-80804959-IIM-Ahmedabad-5C--0_1681465944672_1715238612791.jpg',
       results: [
         '400% increase in inquiries',
         '50K+ social media reach',
@@ -76,7 +76,7 @@ const PortfolioPage = () => {
       category: 'Healthcare',
       client: 'Multi-specialty Clinic, Silchar',
       description: 'Professional medical website with appointment booking, doctor profiles, and patient portal.',
-      image: 'https://images.pexels.com/photos/3184432/pexels-photo-3184432.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://abhiyoghospital.com/wp-content/uploads/2018/08/criticalcaremedicine.jpg',
       results: [
         '200% increase in appointments',
         'Online booking system',
@@ -92,7 +92,7 @@ const PortfolioPage = () => {
       category: 'Fashion & Retail',
       client: 'Designer Boutique, Imphal',
       description: 'Instagram and Facebook marketing for traditional Northeast Indian fashion brand.',
-      image: 'https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: 'https://mir-s3-cdn-cf.behance.net/project_modules/hd/7d2b8244411907.5811e0f1b7e20.png',
       results: [
         '10K+ Instagram followers',
         '500% increase in online sales',
