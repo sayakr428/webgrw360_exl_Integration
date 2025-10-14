@@ -1,10 +1,11 @@
 import React, { useEffect } from 'react';
-import { Search, Globe, Share2, ArrowRight, CheckCircle, Palette, ExternalLink, Star } from 'lucide-react';
+import { Search, Globe, Share2, ArrowRight, CheckCircle, Palette, ExternalLink, Star, Video } from 'lucide-react';
 
 const ServicesPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  
   const services = [
     {
       icon: Search,
@@ -19,7 +20,8 @@ const ServicesPage = () => {
         'Link building strategies'
       ],
       link: '/services/seo',
-      color: 'from-blue-500 to-blue-600'
+      color: 'from-blue-500 to-blue-600',
+      imageUrl: 'https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Globe,
@@ -34,7 +36,8 @@ const ServicesPage = () => {
         'Performance optimization'
       ],
       link: '/services/web-development',
-      color: 'from-green-500 to-green-600'
+      color: 'from-green-500 to-green-600',
+      imageUrl: 'https://images.pexels.com/photos/3184639/pexels-photo-3184639.jpeg?auto=compress&cs=tinysrgb&w=600'
     },
     {
       icon: Share2,
@@ -49,7 +52,8 @@ const ServicesPage = () => {
         'Community management'
       ],
       link: '/services/social-media',
-      color: 'from-orange-500 to-orange-600'
+      color: 'from-orange-500 to-orange-600',
+      imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQEDAcIBGWVS9A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1709693656595?e=1763596800&v=beta&t=iC5SOnrBOCBPzXc9yBD6j3Q9gRfBQfwCqkx45pvnjkM'
     },
     {
       icon: Palette,
@@ -64,22 +68,24 @@ const ServicesPage = () => {
         'Brand consistency management'
       ],
       link: '/services/graphic-design',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-purple-500 to-purple-600',
+      imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQHYC_ZczxV2zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695524296879?e=1763596800&v=beta&t=eKd6zXWEsxCMvpokBsBD3uXqNos05KxpZ8X5m51qyrA'
     },
     {
-      icon: Palette,
+      icon: Video,
       title: 'Video Creation',
-      description: 'Create a strong brand identity that stands out from competitors and resonates with your target audience.',
+      description: 'Professional video content that captivates your audience and delivers your message effectively.',
       features: [
-        'Brand strategy & positioning',
-        'Logo design & visual identity',
-        'Product designing & packaging',
-        'Brand guidelines development',
-        'Marketing collateral design',
-        'Brand consistency management'
+        'Promotional video production',
+        'Social media video content',
+        'Product demonstration videos',
+        'Animated explainer videos',
+        'Video editing & post-production',
+        'YouTube content optimization'
       ],
       link: '/services/video-creation',
-      color: 'from-purple-500 to-purple-600'
+      color: 'from-pink-500 to-pink-600',
+      imageUrl: 'https://visme.co/blog/wp-content/uploads/2021/09/How-to-Make-a-Video-Header.jpg'
     }
   ];
 
@@ -111,7 +117,7 @@ const ServicesPage = () => {
               <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent mb-6 animate-pulse">
                 Our Digital Marketing Services
               </h1>
-              <p className="text-xl text-gray-700 max-w-3x1 mx-auto leading-relaxed">
+              <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Comprehensive digital marketing solutions designed to help Indian businesses 
                 succeed online. From SEO to social media, we've got you covered.
               </p>
@@ -173,11 +179,7 @@ const ServicesPage = () => {
                     <div className="backdrop-blur-xl bg-gradient-to-br from-white/30 to-white/10 border border-white/30 rounded-3xl p-8 shadow-2xl hover:shadow-3xl transition-all duration-500 hover:scale-105">
                       <div className="relative overflow-hidden rounded-2xl">
                         <img
-                          src={`https://images.pexels.com/photos/${
-                            index === 0 ? '3184325' : index === 1 ? '3184639' : index === 2 ? '3184428' : index === 3 ? '3184291' : '3184325'
-                          }/pexels-photo-${
-                            index === 0 ? '3184325' : index === 1 ? '3184639' : index === 2 ? '3184428' : index === 3 ? '3184291' : '3184325'
-                          }.jpeg?auto=compress&cs=tinysrgb&w=600`}
+                          src={service.imageUrl}
                           alt={`${service.title} illustration`}
                           className="w-full h-64 object-cover transition-transform duration-500 hover:scale-105"
                         />
