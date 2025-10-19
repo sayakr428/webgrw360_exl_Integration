@@ -164,17 +164,17 @@ const Footer = () => {
                   Social Media Marketing
                 </Link>
               </li>
-              <li className="text-gray-300 flex items-center">
+              <li> 
+                <Link to="/services/graphic-design" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
                 <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></span>
-                Local SEO
+                Graphic Designing
+                </Link>
               </li>
-              <li className="text-gray-300 flex items-center">
-                <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></span>
-                E-commerce Solutions
-              </li>
-              <li className="text-gray-300 flex items-center">
-                <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3"></span>
-                Digital Consultation
+              <li>
+                <Link to="/services/video-creation" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+                  <span className="w-2 h-2 bg-gradient-to-r from-purple-400 to-pink-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+                Video Creation 
+                </Link>
               </li>
             </ul>
             <Link
