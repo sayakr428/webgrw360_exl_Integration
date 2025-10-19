@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Video, Camera, Edit, Share2, Play, Film, Zap, Target, Users, Award } from 'lucide-react';
@@ -118,20 +117,66 @@ const VideoCreationServicePage = () => {
     }
   ];
 
+  const getCardColors = (index) => {
+    const colors = [
+      {
+        bg: 'to-blue-50',
+        gradient: 'from-blue-500/5 via-cyan-500/10 to-indigo-500/5',
+        border: 'from-blue-400/20 via-cyan-400/30 to-indigo-400/20',
+        orb: 'from-blue-500 to-cyan-500',
+        icon: 'from-blue-500 via-cyan-500 to-indigo-500',
+        iconGlow: 'from-blue-400/40 via-cyan-400/50 to-indigo-400/40',
+        textGradient: 'from-slate-800 via-blue-700 to-indigo-800',
+        hoverGradient: 'from-blue-600 via-cyan-600 to-indigo-600',
+        dotGradient: 'from-blue-500 via-cyan-500 to-indigo-500',
+      },
+      {
+        bg: 'to-pink-50',
+        gradient: 'from-purple-500/5 via-pink-500/10 to-rose-500/5',
+        border: 'from-purple-400/20 via-pink-400/30 to-rose-400/20',
+        orb: 'from-purple-500 to-pink-500',
+        icon: 'from-purple-500 via-pink-500 to-rose-500',
+        iconGlow: 'from-purple-400/40 via-pink-400/50 to-rose-400/40',
+        textGradient: 'from-purple-800 via-pink-700 to-rose-800',
+        hoverGradient: 'from-purple-600 via-pink-600 to-rose-600',
+        dotGradient: 'from-purple-500 via-pink-500 to-rose-500',
+      },
+      {
+        bg: 'to-green-50',
+        gradient: 'from-green-500/5 via-emerald-500/10 to-teal-500/5',
+        border: 'from-green-400/20 via-emerald-400/30 to-teal-400/20',
+        orb: 'from-green-500 to-emerald-500',
+        icon: 'from-green-500 via-emerald-500 to-teal-500',
+        iconGlow: 'from-green-400/40 via-emerald-400/50 to-teal-400/40',
+        textGradient: 'from-green-800 via-emerald-700 to-teal-800',
+        hoverGradient: 'from-green-600 via-emerald-600 to-teal-600',
+        dotGradient: 'from-green-500 via-emerald-500 to-teal-500',
+      },
+      {
+        bg: 'to-orange-50',
+        gradient: 'from-orange-500/5 via-amber-500/10 to-yellow-500/5',
+        border: 'from-orange-400/20 via-amber-400/30 to-yellow-400/20',
+        orb: 'from-orange-500 to-amber-500',
+        icon: 'from-orange-500 via-amber-500 to-yellow-500',
+        iconGlow: 'from-orange-400/40 via-amber-400/50 to-yellow-400/40',
+        textGradient: 'from-orange-800 via-amber-700 to-yellow-800',
+        hoverGradient: 'from-orange-600 via-amber-600 to-yellow-600',
+        dotGradient: 'from-orange-500 via-amber-500 to-yellow-500',
+      }
+    ];
+    return colors[index];
+  };
+
   return (
     <div className="min-h-screen relative overflow-hidden">
       {/* Advanced Animated Background System */}
       <div className="fixed inset-0 -z-20">
-        {/* Mesh Gradient Base */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-950 via-slate-900 to-purple-950"></div>
-        
-        {/* Dynamic Floating Orbs */}
         <div className="absolute top-10 left-10 w-96 h-96 bg-gradient-to-r from-blue-400/20 via-cyan-500/25 to-indigo-500/20 rounded-full blur-3xl animate-float-slow"></div>
         <div className="absolute top-32 right-20 w-80 h-80 bg-gradient-to-r from-purple-400/15 via-pink-500/20 to-rose-500/25 rounded-full blur-3xl animate-float-reverse" style={{animationDelay: '2s'}}></div>
         <div className="absolute bottom-20 left-1/4 w-72 h-72 bg-gradient-to-r from-teal-400/20 via-blue-500/25 to-cyan-500/20 rounded-full blur-3xl animate-float-diagonal" style={{animationDelay: '4s'}}></div>
         <div className="absolute bottom-32 right-1/3 w-64 h-64 bg-gradient-to-r from-indigo-400/15 via-blue-500/20 to-violet-500/15 rounded-full blur-3xl animate-float-circular" style={{animationDelay: '1s'}}></div>
         
-        {/* Geometric Patterns */}
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
           <svg className="w-full h-full" viewBox="0 0 1000 1000">
             <defs>
@@ -147,7 +192,6 @@ const VideoCreationServicePage = () => {
           </svg>
         </div>
 
-        {/* Parallax Elements */}
         <div 
           className="absolute top-1/4 right-1/4 w-4 h-4 bg-blue-400/60 rounded-full animate-pulse"
           style={{
@@ -169,7 +213,6 @@ const VideoCreationServicePage = () => {
           }}
         ></div>
 
-        {/* Neural Network Lines */}
         <svg className="absolute inset-0 w-full h-full opacity-20" viewBox="0 0 1000 1000">
           <defs>
             <linearGradient id="neuralGrad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -189,7 +232,6 @@ const VideoCreationServicePage = () => {
         </svg>
       </div>
 
-      {/* Interactive Cursor Effect */}
       <div 
         className="fixed pointer-events-none z-50 w-8 h-8 rounded-full border border-blue-400/50 mix-blend-difference transition-all duration-300"
         style={{
@@ -202,7 +244,6 @@ const VideoCreationServicePage = () => {
       <div className="py-20 relative">
         {/* Hero Section */}
         <section className="relative overflow-hidden py-32">
-          {/* Layered Background Effects */}
           <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-blue-900/90 to-indigo-900/95 backdrop-blur-sm"></div>
           <div className="absolute inset-0">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-blue-500/5 to-transparent transform -skew-y-2"></div>
@@ -210,7 +251,6 @@ const VideoCreationServicePage = () => {
             <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-br from-purple-400/10 to-pink-400/10 rounded-full blur-2xl animate-float-gentle"></div>
           </div>
 
-          {/* Floating Particles */}
           <div className="absolute inset-0 overflow-hidden">
             {[...Array(20)].map((_, i) => (
               <div
@@ -228,7 +268,6 @@ const VideoCreationServicePage = () => {
           
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="text-center mb-20">
-              {/* Enhanced Icon with Multi-layer Effects */}
               <div className="relative inline-block mb-8">
                 <div className="w-24 h-24 bg-gradient-to-br from-white/5 via-blue-500/10 to-cyan-500/5 backdrop-blur-xl rounded-3xl flex items-center justify-center mx-auto border border-white/10 shadow-2xl animate-float-gentle">
                   <Video className="h-12 w-12 text-white drop-shadow-2xl" />
@@ -237,7 +276,6 @@ const VideoCreationServicePage = () => {
                 <div className="absolute -inset-4 bg-gradient-to-r from-blue-400/10 via-cyan-500/15 to-indigo-500/10 rounded-full blur-2xl animate-morph"></div>
               </div>
               
-              {/* Enhanced Typography */}
               <h1 className="text-5xl md:text-7xl font-black mb-8 relative">
                 <span className="bg-gradient-to-r from-white via-blue-200 to-cyan-200 bg-clip-text text-transparent drop-shadow-2xl animate-text-glow">
                   Video Creation Services
@@ -246,7 +284,6 @@ const VideoCreationServicePage = () => {
                 <span className="bg-gradient-to-r from-blue-300 via-cyan-300 to-indigo-300 bg-clip-text text-transparent text-4xl md:text-6xl animate-text-shimmer">
                   for Indian Businesses
                 </span>
-                {/* Glitch Effect Lines */}
                 <div className="absolute -inset-2 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-lg opacity-0 animate-glitch-1"></div>
                 <div className="absolute -inset-2 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-lg opacity-0 animate-glitch-2"></div>
               </h1>
@@ -257,7 +294,6 @@ const VideoCreationServicePage = () => {
                 and build strong connections with your customers.
               </p>
               
-              {/* Enhanced CTA Button */}
               <div className="mt-12">
                 <a
                   href="https://wa.me/918974595376?text=Hi! I need professional video creation services for my business. Please share your video portfolio and pricing."
@@ -265,15 +301,12 @@ const VideoCreationServicePage = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {/* Multi-layer glow effects */}
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-400 via-cyan-500 to-indigo-500 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500 opacity-60 group-hover:opacity-100 animate-pulse-glow"></div>
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/50 via-cyan-500/50 to-indigo-500/50 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-40 animate-morph"></div>
                   
                   <div className="relative bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 text-white px-10 py-5 rounded-full font-bold text-xl border border-blue-400/30 shadow-2xl backdrop-blur-sm">
                     <span className="relative z-10">Get Video Quote</span>
-                    {/* Inner glow */}
                     <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
-                    {/* Particle effect */}
                     <div className="absolute inset-0 rounded-full overflow-hidden">
                       {[...Array(8)].map((_, i) => (
                         <div
@@ -294,80 +327,7 @@ const VideoCreationServicePage = () => {
           </div>
         </section>
       
-        {/* Enhanced Services Grid (Version 1 - as given) */}
-        <section className="py-24 relative">
-          <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-white/60 to-blue-50/80 backdrop-blur-sm"></div>
-          
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-            <div className="text-center mb-20">
-              <h2 className="text-4xl md:text-6xl font-black mb-6">
-                <span className="bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent">
-                  Video Production
-                </span>
-                <br />
-                <span className="bg-gradient-to-r from-blue-600 via-cyan-600 to-indigo-600 bg-clip-text text-transparent animate-text-shimmer">
-                  Services
-                </span>
-              </h2>
-              <p className="text-xl md:text-2xl text-gray-600/90 max-w-3xl mx-auto">
-                Complete video solutions from concept to final delivery
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-              {videoServices.map((service, index) => {
-                const IconComponent = service.icon;
-                return (
-                  <Link 
-                    key={index} 
-                    to={service.link}
-                    className="block transform transition-all duration-700 hover:scale-105 group"
-                  >
-                    <div className="relative h-full">
-                      {/* Complex layered backgrounds */}
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-slate-50/90 to-blue-50/80 rounded-[2rem] blur-sm group-hover:blur-md transition-all duration-700"></div>
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-cyan-500/10 to-indigo-500/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 via-cyan-400/30 to-indigo-400/20 rounded-[2.2rem] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700"></div>
-                      
-                      <div className="relative bg-white/70 backdrop-blur-xl p-10 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 border border-white/60 group-hover:bg-white/85 overflow-hidden">
-                    
-                        {/* Background pattern */}
-                        <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-700">
-                          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full blur-2xl animate-morph"></div>
-                        </div>
-
-                        <div className="relative overflow-hidden rounded-2xl mb-8">
-                          <img
-                            src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600"
-                            alt="Video Production Setup"
-                            className="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-700"
-                          />
-                          <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                        </div>
-                        
-                        <div className="text-center relative">
-                          <h3 className="text-3xl font-black mb-4 group-hover:scale-105 transition-transform duration-500">
-                            <span className="bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600">
-                              Professional Quality
-                            </span>
-                          </h3>
-                          <p className="text-gray-600/95 leading-relaxed text-lg group-hover:text-gray-700 transition-colors duration-500">
-                            High-quality video production with professional equipment 
-                            and experienced videographers.
-                          </p>
-                        </div>
-
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-cyan-500/10 to-indigo-500/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                      </div>
-                    </div>
-                  </Link>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-        
-        {/* Enhanced Services Grid (Version 2 from dangling lines, completed & preserved) */}
+        {/* Enhanced Services Grid (Version 2 - With Different Colors & Icons) */}
         <section className="py-24 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-50/80 via-white/60 to-blue-50/80 backdrop-blur-sm"></div>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
@@ -386,49 +346,30 @@ const VideoCreationServicePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
               {videoServices.map((service, index) => {
                 const IconComponent = service.icon;
+                const colors = getCardColors(index);
+                
                 return (
-                  <Link
-                    key={index}
-                    to={service.link}
-                    className="block transform transition-all duration-700 hover:scale-105 group"
-                  >
+                  <div key={index} className="transform transition-all duration-700 hover:scale-105 group cursor-pointer">
                     <div className="relative h-full">
-                      <div className="absolute inset-0 bg-gradient-to-br from-white/80 via-slate-50/90 to-blue-50/80 rounded-[2rem] blur-sm group-hover:blur-md transition-all duration-700"></div>
-                      <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-cyan-500/10 to-indigo-500/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-all duration-700"></div>
-                      <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 via-cyan-400/30 to-indigo-400/20 rounded-[2.2rem] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700"></div>
+                      <div className={`absolute inset-0 bg-gradient-to-br from-white/80 via-slate-50/90 ${colors.bg} rounded-[2rem] blur-sm group-hover:blur-md transition-all duration-700`}></div>
+                      <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} rounded-[2rem] opacity-0 group-hover:opacity-100 transition-all duration-700`}></div>
+                      <div className={`absolute -inset-2 bg-gradient-to-r ${colors.border} rounded-[2.2rem] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700`}></div>
 
                       <div className="relative rounded-[2rem] shadow-2xl hover:shadow-3xl transition-all duration-700 border border-white/60 cursor-pointer h-full group-hover:bg-white/85 overflow-hidden bg-white/70 backdrop-blur-xl p-10">
-                        {/* Animated background pattern */}
                         <div className="absolute top-0 right-0 w-32 h-32 opacity-5 group-hover:opacity-10 transition-opacity duration-700">
-                          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full blur-2xl animate-morph"></div>
+                          <div className={`w-full h-full bg-gradient-to-br ${colors.orb} rounded-full blur-2xl`}></div>
                         </div>
 
-                        {/* Enhanced floating icon */}
                         <div className="relative mb-8">
-                          <div className="w-20 h-20 bg-gradient-to-br from-blue-500 via-cyan-500 to-indigo-500 rounded-3xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-700 relative overflow-hidden">
+                          <div className={`w-20 h-20 bg-gradient-to-br ${colors.icon} rounded-3xl flex items-center justify-center shadow-2xl transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-700 relative overflow-hidden`}>
                             <IconComponent className="h-10 w-10 text-white drop-shadow-lg relative z-10" />
-                            {/* Inner glow */}
                             <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-white/10 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                            {/* Particle effects */}
-                            <div className="absolute inset-0 rounded-3xl overflow-hidden">
-                              {[...Array(6)].map((_, i) => (
-                                <div
-                                  key={i}
-                                  className="absolute w-1 h-1 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
-                                  style={{
-                                    left: `${15 + i * 12}%`,
-                                    top: `${20 + (i % 2) * 40}%`,
-                                    animationDelay: `${i * 0.3}s`
-                                  }}
-                                ></div>
-                              ))}
-                            </div>
                           </div>
-                          <div className="absolute inset-0 bg-gradient-to-br from-blue-400/40 via-cyan-400/50 to-indigo-400/40 rounded-3xl blur-xl animate-pulse-glow group-hover:scale-125 transition-all duration-700"></div>
+                          <div className={`absolute inset-0 bg-gradient-to-br ${colors.iconGlow} rounded-3xl blur-xl animate-pulse-glow group-hover:scale-125 transition-all duration-700`}></div>
                         </div>
                         
                         <h3 className="text-2xl font-black mb-6 group-hover:scale-105 transition-transform duration-500">
-                          <span className="bg-gradient-to-r from-slate-800 via-blue-700 to-indigo-800 bg-clip-text text-transparent group-hover:from-blue-600 group-hover:via-cyan-600 group-hover:to-indigo-600">
+                          <span className={`bg-gradient-to-r ${colors.textGradient} bg-clip-text text-transparent group-hover:${colors.hoverGradient}`}>
                             {service.title}
                           </span>
                         </h3>
@@ -441,8 +382,8 @@ const VideoCreationServicePage = () => {
                           {service.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-center space-x-4 group/item transform hover:translate-x-2 transition-transform duration-300">
                               <div className="relative">
-                                <div className="w-3 h-3 bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 rounded-full shadow-lg relative">
-                                  <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full blur-sm animate-pulse opacity-60"></div>
+                                <div className={`w-3 h-3 bg-gradient-to-r ${colors.dotGradient} rounded-full shadow-lg relative`}>
+                                  <div className={`absolute inset-0 bg-gradient-to-r ${colors.dotGradient.split(' ').slice(0, 2).join(' ')} rounded-full blur-sm animate-pulse opacity-60`}></div>
                                 </div>
                               </div>
                               <span className="text-gray-700/95 font-medium text-base group-hover/item:text-gray-900 transition-colors duration-300">
@@ -452,48 +393,45 @@ const VideoCreationServicePage = () => {
                           ))}
                         </ul>
 
-                        {/* Advanced hover effects */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-cyan-500/10 to-indigo-500/5 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
-                        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700 transform -translate-x-1/2 -translate-y-1/2 animate-morph-slow"></div>
+                        <div className={`absolute inset-0 bg-gradient-to-br ${colors.gradient} rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-700`}></div>
                       </div>
                     </div>
-                  </Link>
+                  </div>
                 );
               })}
             </div>
-            {/* ADD THE LEARN MORE BUTTON HERE */}
-<div className="mt-12 text-left">
-  <Link
-    to="/services/Subservices/video-editing"
-    className="group relative inline-block transform hover:scale-105 transition-all duration-500"
-  >
-    <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-60 group-hover:opacity-100 animate-pulse-glow"></div>
-    <div className="absolute -inset-1 bg-gradient-to-r from-green-400/50 via-emerald-500/50 to-teal-500/50 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 opacity-40 animate-morph"></div>
-    
-    <div className="relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white px-10 py-5 rounded-full font-bold text-xl border border-green-400/30 shadow-2xl backdrop-blur-sm overflow-hidden flex items-center gap-3">
-      <span className="relative z-10">Learn More About Our Services</span>
-      <svg className="w-6 h-6 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-      </svg>
-      <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
-      
-      {/* Sparkle effect */}
-      <div className="absolute inset-0 rounded-full overflow-hidden">
-        {[...Array(8)].map((_, i) => (
-          <div
-            key={i}
-            className="absolute w-1 h-1 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
-            style={{
-              left: `${10 + i * 10}%`,
-              top: `${30 + (i % 2) * 20}%`,
-              animationDelay: `${i * 0.2}s`
-            }}
-          ></div>
-        ))}
-      </div>
-    </div>
-  </Link>
-</div>
+
+            <div className="mt-12 text-left">
+              <Link
+                to="/services/Subservices/video-editing"
+                className="group relative inline-block transform hover:scale-105 transition-all duration-500"
+              >
+                <div className="absolute inset-0 bg-gradient-to-r from-green-400 via-emerald-500 to-teal-500 rounded-full blur-xl group-hover:blur-2xl transition-all duration-500 opacity-60 group-hover:opacity-100 animate-pulse-glow"></div>
+                <div className="absolute -inset-1 bg-gradient-to-r from-green-400/50 via-emerald-500/50 to-teal-500/50 rounded-full blur-lg group-hover:blur-xl transition-all duration-500 opacity-40 animate-morph"></div>
+                
+                <div className="relative bg-gradient-to-r from-green-500 via-emerald-500 to-teal-500 text-white px-10 py-5 rounded-full font-bold text-xl border border-green-400/30 shadow-2xl backdrop-blur-sm overflow-hidden flex items-center gap-3">
+                  <span className="relative z-10">Learn More About Our Services</span>
+                  <svg className="w-6 h-6 relative z-10 transform group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
+                  
+                  <div className="absolute inset-0 rounded-full overflow-hidden">
+                    {[...Array(8)].map((_, i) => (
+                      <div
+                        key={i}
+                        className="absolute w-1 h-1 bg-white/80 rounded-full opacity-0 group-hover:opacity-100 animate-sparkle"
+                        style={{
+                          left: `${10 + i * 10}%`,
+                          top: `${30 + (i % 2) * 20}%`,
+                          animationDelay: `${i * 0.2}s`
+                        }}
+                      ></div>
+                    ))}
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </section>
         
@@ -530,7 +468,6 @@ const VideoCreationServicePage = () => {
                     
                     <div className="relative bg-white/10 backdrop-blur-xl p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 border border-white/20 group-hover:bg-white/15 overflow-hidden border-l-4 border-l-blue-400">
                       
-                      {/* Background pattern */}
                       <div className="absolute top-0 right-0 w-24 h-24 opacity-5 group-hover:opacity-10 transition-opacity duration-700">
                         <div className="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full blur-2xl animate-morph"></div>
                       </div>
@@ -554,7 +491,7 @@ const VideoCreationServicePage = () => {
           </div>
         </section>
        
-        {/* Enhanced Benefits Section (completed) */}
+        {/* Enhanced Benefits Section */}
         <section className="py-24 relative">
           <div className="absolute inset-0 bg-gradient-to-br from-slate-50/90 via-white/80 to-blue-50/90 backdrop-blur-sm"></div>
           
@@ -673,12 +610,11 @@ const VideoCreationServicePage = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {process.map((item, index) => (
                 <div key={index} className="group relative transform hover:scale-105 transition-all duration-700">
-                  <div className="absolute inset-0 bg-gradient-to-br fromWHITE/10 via-blue-500/5 to-cyan-500/10 rounded-3xl blur-sm group-hover:blur-md transition-all duration-700"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-blue-500/5 to-cyan-500/10 rounded-3xl blur-sm group-hover:blur-md transition-all duration-700"></div>
                   <div className="absolute -inset-2 bg-gradient-to-r from-blue-400/20 via-cyan-400/30 to-indigo-400/20 rounded-[2rem] opacity-0 group-hover:opacity-100 blur-xl transition-all duration-700"></div>
                   
                   <div className="relative bg-white/10 backdrop-blur-xl p-8 rounded-3xl shadow-2xl hover:shadow-3xl transition-all duration-700 border border-white/20 text-center group-hover:bg-white/15 overflow-hidden">
                     
-                    {/* Background pattern */}
                     <div className="absolute top-0 right-0 w-20 h-20 opacity-5 group-hover:opacity-10 transition-opacity duration-700">
                       <div className="w-full h-full bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full blur-2xl animate-morph"></div>
                     </div>
@@ -718,12 +654,9 @@ const VideoCreationServicePage = () => {
             <div className="absolute bottom-0 right-0 w-[40rem] h-[40rem] bg-gradient-to-t from-purple-400/15 via-pink-500/10 to-transparent rounded-full blur-3xl animate-float-gentle"></div>
           </div>
 
-          {/* Floating Elements */}
           <div className="absolute inset-0 overflow-hidden">
-            {/* Background overlay */}
             <div className="absolute inset-0 bg-gradient-to-br from-slate-900/95 via-blue-900/90 to-indigo-900/95 backdrop-blur-sm"></div>
             
-            {/* Actual floating particles */}
             {[...Array(15)].map((_, i) => (
               <div
                 key={i}
@@ -767,7 +700,6 @@ const VideoCreationServicePage = () => {
                 <div className="relative bg-gradient-to-r from-blue-500 via-cyan-500 to-indigo-500 text-white px-10 py-5 rounded-full font-bold text-xl border border-blue-400/30 shadow-2xl backdrop-blur-sm overflow-hidden">
                   <span className="relative z-10">Get Video Quote</span>
                   <div className="absolute inset-0 bg-gradient-to-r from-white/20 via-white/10 to-white/20 rounded-full opacity-0 group-hover:opacity-100 transition-all duration-500 animate-shimmer"></div>
-                  {/* Enhanced sparkle effect */}
                   <div className="absolute inset-0 rounded-full overflow-hidden">
                     {[...Array(12)].map((_, i) => (
                       <div
@@ -806,7 +738,7 @@ const VideoCreationServicePage = () => {
       </div>
 
       {/* Advanced CSS Animations */}
-      <style >{`
+      <style>{`
         @keyframes float-slow {
           0%, 100% { transform: translateY(0px) rotate(0deg) scale(1); }
           33% { transform: translateY(-20px) rotate(1deg) scale(1.05); }
