@@ -274,8 +274,8 @@ Please get back to me with more information.`;
                       <option value="SEO Services" className="bg-slate-800 text-white">SEO Services</option>
                       <option value="Website Development" className="bg-slate-800 text-white">Website Development</option>
                       <option value="Social Media Marketing" className="bg-slate-800 text-white">Social Media Marketing</option>
-                      <option value="Google Ads" className="bg-slate-800 text-white">Google Ads Management</option>
-                      <option value="Complete Digital Marketing" className="bg-slate-800 text-white">Complete Digital Marketing</option>
+                      <option value="Graphic Designing Services" className="bg-slate-800 text-white">Graphic Designing Services</option>
+                      <option value="Video Creation Services" className="bg-slate-800 text-white">Video Creation Services</option>
                       <option value="Consultation" className="bg-slate-800 text-white">Free Consultation</option>
                     </select>
                   </div>

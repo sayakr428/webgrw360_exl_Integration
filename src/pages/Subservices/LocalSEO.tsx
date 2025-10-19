@@ -110,7 +110,8 @@ const LocalSEO = () => {
         ))}
       </div>
       <div className="max-w-2xl mx-auto text-gray-600 mb-6">
-        <p>Is your website buried on search engines, losing traffic and leads? Modern buyers rely on search to make decisions—and if you’re not seen, you don’t exist in their minds. WebGrow360’s SEO gets you in front of ready-to-act customers, slashing ad costs while building real authority and trust.</p>
+        <p>Is your website invisible in search results, buried beneath competitors, or struggling to bring in qualified leads?</p> 
+        <p>In today’s environment, simply having a website isn’t enough, businesses must actively compete to be noticed. Without strong search engine presence, companies face dwindling website traffic, missed sales opportunities, high advertising costs, and, worst of all, a perception of irrelevance to potential customers.</p>
       </div>
       <a
         href="/contact"
@@ -122,9 +123,9 @@ const LocalSEO = () => {
 
     {/* WHY SEO */}
     <section className="max-w-4xl mx-auto px-4 mb-12 text-center">
-      <h2 className="text-3xl font-bold mb-3 text-gray-800">Why Companies Need SEO Services</h2>
+      <h2 className="text-3xl font-bold mb-3 text-gray-800">Why Companies Need SEO Services ?</h2>
       <p className="text-lg text-gray-600 mb-4">
-        Without strong SEO, companies suffer from dwindling web traffic, high ad costs, and missed customers. Effective SEO builds your ranking, increases organic visitors, and delivers more conversions reliably—month after month.
+        Modern buyers overwhelmingly use search engines to make decisions, if your business doesn’t show up, it doesn't exist in their minds. SEO addresses these pain points by driving relevant, organic traffic directly to your site. It’s not only cost-effective compared to traditional advertising but also builds lasting brand authority and grows trust among current and prospective customers. Well-executed SEO means higher rankings, more clicks, and an increase in genuine enquiries and conversions.
       </p>
       <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left text-gray-600 mt-5">
         <li>⭐ 93% of online experiences begin with a search engine.</li>
