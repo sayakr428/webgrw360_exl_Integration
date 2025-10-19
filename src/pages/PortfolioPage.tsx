@@ -143,9 +143,9 @@ const PortfolioPage = () => {
             <div className="absolute inset-0 bg-gradient-to-tl from-cyan-50/60 via-blue-50/60 to-indigo-50/60 rounded-[3rem] transform rotate-1 scale-110 blur-md"></div>
             
             <div className="relative z-10 py-16">
-              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 animate-pulse">
-                Our Success Stories
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-black bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-6 drop-shadow-xl">
+  Our Success Stories
+</h1>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 See how we've helped Indian businesses across various industries achieve 
                 remarkable growth through strategic digital marketing solutions.

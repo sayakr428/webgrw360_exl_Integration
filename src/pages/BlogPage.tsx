@@ -115,9 +115,11 @@ const BlogPage = () => {
             <div className="absolute inset-0 bg-gradient-to-tl from-orange-50/60 via-pink-50/60 to-red-50/60 rounded-[4rem] transform rotate-2 scale-110 blur-md"></div>
             
             <div className="relative z-10 py-16">
-              <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent mb-6 animate-pulse">
-                Digital Marketing Insights
-              </h1>
+              <h1 className="text-4xl md:text-5xl font-black mb-6 pb-2">
+  <span className="bg-gradient-to-r from-emerald-600 via-blue-600 to-purple-600 bg-clip-text text-transparent">
+    Digital Marketing Insights
+  </span>
+</h1>
               <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
                 Expert tips, strategies, and insights to help Indian businesses thrive online. 
                 Learn from our experience working with 10+ successful digital marketing campaigns.
