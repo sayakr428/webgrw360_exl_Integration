@@ -117,7 +117,7 @@ const VideoCreationServicePage = () => {
     }
   ];
 
-  const getCardColors = (index) => {
+  const getCardColors = (index: number) => {
     const colors = [
       {
         bg: 'to-blue-50',
@@ -862,4 +862,4 @@ const VideoCreationServicePage = () => {
   );
 };
 
-export default VideoCreationServicePage;
+export default VideoCreationServicePage; 

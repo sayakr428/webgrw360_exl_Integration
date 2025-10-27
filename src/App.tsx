@@ -5,6 +5,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/WhatsAppFloat";
 import VisitTracker from "./components/VisitTracker"; // 👈 added
+import FloatingLeadForm from "./components/FloatingLeadForm"; // ✅ NEW
+
 
 import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
@@ -25,6 +27,7 @@ function App() {
   return (
     <Router>
       <VisitTracker /> {/* 👈 fires on initial load + every route change */}
+      <FloatingLeadForm />
       <div className="min-h-screen bg-white">
         <Header />
         <main>

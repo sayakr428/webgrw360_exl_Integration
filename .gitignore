@@ -39,3 +39,6 @@ server/.env
 
 # Other local files
 *.local
+
+# Local Netlify folder
+.netlify
