@@ -53,7 +53,7 @@ const ServicesPage = () => {
       ],
       link: '/services/social-media',
       color: 'from-orange-500 to-orange-600',
-      imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQEDAcIBGWVS9A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1709693656595?e=1763596800&v=beta&t=iC5SOnrBOCBPzXc9yBD6j3Q9gRfBQfwCqkx45pvnjkM'
+      imageUrl: 'https://martech.org/wp-content/uploads/2015/04/social-media-marketing-e1430407975761.jpg'
     },
     {
       icon: Palette,
@@ -69,7 +69,7 @@ const ServicesPage = () => {
       ],
       link: '/services/graphic-design',
       color: 'from-purple-500 to-purple-600',
-      imageUrl: 'https://media.licdn.com/dms/image/v2/D4D12AQHYC_ZczxV2zw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1695524296879?e=1763596800&v=beta&t=eKd6zXWEsxCMvpokBsBD3uXqNos05KxpZ8X5m51qyrA'
+      imageUrl: 'https://www.ucda.com/files/4407/'
     },
     {
       icon: Video,

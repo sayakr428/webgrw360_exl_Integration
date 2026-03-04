@@ -333,21 +333,21 @@ const HomePage = () => {
       business: 'Kumar Electronics, Guwahati',
       rating: 5,
       text: 'WebGrow360 helped us increase our online sales by 300% within 6 months. Their understanding of the Northeast Indian market is exceptional.',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQGtk99bZiPHNg/profile-displayphoto-scale_200_200/B56ZlrFfgwIAAY-/0/1758438226829?e=1762387200&v=beta&t=FQ_svu5Z2tVUBQzn4x6ccpoVqKLyltYUrQY9SrScdRI'
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQG74oXKbQQifA/profile-displayphoto-crop_800_800/B4DZqBdnWRJIAM-/0/1763108616973?e=1774483200&v=beta&t=YDncRZRHnL1OcPHJcbbHyqRusnTfBzKPBxcCpwMvVfI'
     },
     {
       name: 'Priya Sharma',
       business: 'Sharma Textiles, Silchar',
       rating: 5,
       text: 'The SEO services provided by WebGrow360 got us ranking #1 for textiles in Assam. Our business inquiries doubled!',
-      image: 'https://media.licdn.com/dms/image/v2/C4E03AQERH4vQyWuVAA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1649850661679?e=1762387200&v=beta&t=zD_JaOsvtw2pLsnB8svV2CZH6reh7_GgFC8WDE4zaXo'
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQEj64XHy73EuQ/profile-displayphoto-crop_800_800/B56Zw7gBjQIYAI-/0/1770524778180?e=1774483200&v=beta&t=mltYK5u2ZxCNFDldEXMjnpUod0Es4wSANdaIU_NVI00'
     },
     {
       name: 'Ankit Das',
       business: 'Das Consulting, Agartala',
       rating: 5,
       text: 'Professional, reliable, and results-driven. They understand the local business culture and deliver exactly what they promise.',
-      image: 'https://media.licdn.com/dms/image/v2/D4D03AQEZvy_R9EY63g/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1681819573926?e=1762387200&v=beta&t=s4-vo8Ttj5t9zPGhHqO1w0liW9mA_hpp9B_02EqXH_M'
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQHHBA_lnLQXlw/profile-displayphoto-crop_800_800/B56Zwrdn0LKMAI-/0/1770255717316?e=1774483200&v=beta&t=NEUATnXk9tc3z_kNC_cCRLgSUhQDjU8LQa_3LU7LLek'
     }
   ];
 

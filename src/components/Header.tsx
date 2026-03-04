@@ -1,4 +1,4 @@
-import logo from './2.jpg';
+import logo from "./3.jpeg";
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, MessageCircle } from 'lucide-react';

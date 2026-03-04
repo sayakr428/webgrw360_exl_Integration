@@ -1,4 +1,4 @@
-import logo from './2.jpg';
+import logo from "./3.jpeg";
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { TrendingUp, MapPin, Phone, Mail, Clock } from 'lucide-react';
