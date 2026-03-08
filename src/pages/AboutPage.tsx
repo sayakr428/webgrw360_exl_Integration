@@ -164,7 +164,7 @@ const AboutPage = () => {
               
               <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-8 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
                 <a
-                  href="https://www.linkedin.com/in/sayak--roy"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block group-hover:scale-110 transition-transform duration-300"
@@ -184,7 +184,7 @@ const AboutPage = () => {
 
               <div className="backdrop-blur-xl bg-white/20 border border-white/30 rounded-3xl p-8 shadow-2xl text-center hover:shadow-3xl hover:bg-white/30 transition-all duration-500 hover:scale-105 group">
                 <a
-                  href="https://www.linkedin.com/in/srijayandey/"
+                  href=""
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block group-hover:scale-110 transition-transform duration-300"
