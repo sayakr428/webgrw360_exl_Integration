@@ -98,48 +98,48 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 shadow-xl hover:bg-white/10 transition-all duration-300">
-            <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-              Quick Links
-            </h3>
-            <ul className="space-y-3">
-              <li>
-                <Link to="/" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/about" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link to="/services" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link to="/portfolio" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link to="/blog" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
-                  <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+  <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
+    Quick Links
+  </h3>
+  <ul className="space-y-3">
+    <li>
+      <Link to="/" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        Home
+      </Link>
+    </li>
+    <li>
+      <Link to="/about" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        About Us
+      </Link>
+    </li>
+    <li>
+      <Link to="/services" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        Services
+      </Link>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/webgroww360/" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/profile.php?id=61581809740167" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        Facebook
+      </a>
+    </li>
+    <li>
+      <Link to="/contact" className="text-gray-300 hover:text-white transition-all duration-300 flex items-center group">
+        <span className="w-2 h-2 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full mr-3 group-hover:scale-150 transition-transform duration-300"></span>
+        Contact
+      </Link>
+    </li>
+  </ul>
+</div>
 
           <div className="backdrop-blur-sm bg-white/5 rounded-2xl p-6 border border-white/10 shadow-xl hover:bg-white/10 transition-all duration-300">
             <h3 className="text-lg font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
